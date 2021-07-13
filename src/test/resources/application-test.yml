@@ -1,4 +1,8 @@
 datasources:
   default:
-    url: jdbc:tc:mysql:8:///db
-    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:mysql://localhost:3306/carrosGrpc
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+logger:
+  levels:
+    io.micronaut.transaction: DEBUG
